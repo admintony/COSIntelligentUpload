@@ -83,9 +83,9 @@ class COS_Intelligent_Upload(object):
 def main():
     #imageSave()
     #======================设置区========================
-    app_id = 1252108140
-    secret_id = "AKIDa1GG5kWWcYGl36wcZTgiWBbprfHeslSu"
-    secket_key = "MSIsCF2ZqrfGhPt8D5kCOM4WhdJYaR4U"
+    app_id = ******
+    secret_id = "*****"
+    secket_key = "*****"
     region = "bj"
     #====================设置区结束======================
     cos = COS_Intelligent_Upload(app_id,secret_id,secket_key,region)
