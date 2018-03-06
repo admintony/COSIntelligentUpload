@@ -1,0 +1,1 @@
+[COSIntelligentUpload V2.0 Beta](http://admintony.com/2018/03/05/%E8%85%BE%E8%AE%AF%E4%BA%91COS%E5%9B%BE%E5%BA%8A%E6%99%BA%E8%83%BD%E4%B8%8A%E4%BC%A0%E5%B7%A5%E5%85%B7%E7%BC%96%E5%86%99/)
