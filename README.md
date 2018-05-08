@@ -1,4 +1,4 @@
-源地址：[腾讯云COS图床智能上传工具编写](http://admintony.com/2018/03/05/%E8%85%BE%E8%AE%AF%E4%BA%91COS%E5%9B%BE%E5%BA%8A%E6%99%BA%E8%83%BD%E4%B8%8A%E4%BC%A0%E5%B7%A5%E5%85%B7%E7%BC%96%E5%86%99/)
+源地址：[腾讯云COS图床智能上传工具编写](http://admintony.com/%E8%85%BE%E8%AE%AF%E4%BA%91COS%E5%9B%BE%E5%BA%8A%E6%99%BA%E8%83%BD%E4%B8%8A%E4%BC%A0%E5%B7%A5%E5%85%B7%E7%BC%96%E5%86%99.html)
 
 # 1.编写意图
 
