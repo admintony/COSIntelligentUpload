@@ -96,9 +96,9 @@ def main():
     
     #======================设置区========================
     app_id = 1252108140
-    secret_id = "AKIDa1GG5kWWcYGl36wcZTgiWBbprfHeslSu"
-    secket_key = "MSIsCF2ZqrfGhPt8D5kCOM4WhdJYaR4U"
-    region = "bj"
+    secret_id = "AK"
+    secket_key = "M5JYU"
+    region = ""
     #====================设置区结束======================
     
     """
