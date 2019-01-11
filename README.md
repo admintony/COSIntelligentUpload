@@ -1,3 +1,60 @@
+# 0.更新内容
+
+## v2.1 Beat
+
+1.优化配置文件读取，允许在配置文件中增加注释，如：
+
+```html
+app_id = 1252108140
+secret_id = AK******
+secret_key = Vu*******
+region = bj
+# 是否启用水印 , no表示不启用 , yes表示启用
+watermark = yes
+# 水印类型 , 0表示图片水印 , 1表示文字水印
+watermark_method = 0
+# 图片水印地址
+watermark_path = watermark.jpg
+# 文字水印内容
+watermark_content = http://www.admintony.com
+```
+
+2.添加水印
+
+2.1 图片水印
+
+若要使用图片水印，则必须要在配置文件中设置以下内容：
+
+```html
+# 是否启用水印 , no表示不启用 , yes表示启用
+watermark = yes
+# 水印类型 , 0表示图片水印 , 1表示文字水印
+watermark_method = 0
+# 图片水印地址 ：建议 200x200像素的
+watermark_path = watermark.png
+```
+
+效果如下图所示
+
+![](https://blog-1252108140.cosbj.myqcloud.com/201901/1547221912.8406835.png)
+
+2.2 文字水印
+
+若需要使用文字水印，则必须要在配置文件中设置以下内容：
+
+```html
+# 是否启用水印 , no表示不启用 , yes表示启用
+watermark = yes
+# 水印类型 , 0表示图片水印 , 1表示文字水印
+watermark_method = 1
+# 文字水印内容
+watermark_content = http://www.admintony.com
+```
+
+效果如下：
+
+![](https://blog-1252108140.cosbj.myqcloud.com/201901/1547222089.1917496.png)
+
 源地址：[腾讯云COS图床智能上传工具编写](http://admintony.com/%E8%85%BE%E8%AE%AF%E4%BA%91COS%E5%9B%BE%E5%BA%8A%E6%99%BA%E8%83%BD%E4%B8%8A%E4%BC%A0%E5%B7%A5%E5%85%B7%E7%BC%96%E5%86%99.html)
 
 # 1.编写意图
@@ -136,7 +193,7 @@ sub函数代码：
 * httplib2 : cos_lib3中使用了，因此安装
 
 **安装库：**
-    
+
     pip install pywin32
     pip install PIL
     cos_lib3 : 已经放在了同目录下进行引用，无需安装
@@ -181,3 +238,4 @@ r.clipboard_clear()
 r.clipboard_append('http://www.admintony.com')
 r.destroy()
 ```
+
