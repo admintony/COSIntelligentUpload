@@ -201,9 +201,9 @@ sub函数代码：
 
 ## 4.3 使用说明
 
-![](https://blog-1252108140.cosbj.myqcloud.com/201803/1520257958.352451.png)
+![](https://simon-blog-1256238262.cosbj.myqcloud.com/Blog/201901/1547465151.9767356.png)
 
-在腾讯云的COS中申请API密钥，然后填写进去即可。
+在腾讯云的COS中申请API密钥，填入设置区中对应的 Appid, Secretid, SecretKey，最后将创建的存储桶名称（不含 Appid 部分）填入 bucket_name 即可。
 
 特别说明一下region：
 
