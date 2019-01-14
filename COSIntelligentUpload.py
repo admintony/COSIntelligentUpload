@@ -26,11 +26,12 @@ sys.path.append(os.path.dirname(__file__))
 import cos_lib3
 
 class COS_Intelligent_Upload(object):
-    def __init__(self,app_id,secret_id,secket_key,region):
+    def __init__(self,app_id,secret_id,secket_key,region,bucket_name):
         self.app_id = app_id
         self.secret_id = secret_id
         self.secket_key = secket_key
         self.region = region
+        self.bucket_name = bucket_name
 
     # 将字符串写入粘贴板
     def setText(self,aString):
@@ -60,7 +61,7 @@ class COS_Intelligent_Upload(object):
     def upload(self,file_name,name):
         cos = cos_lib3.Cos(self.app_id, self.secret_id,
                            self.secket_key, self.region)
-        bucket = cos.get_bucket("blog")
+        bucket = cos.get_bucket(self.bucket_name)
         # 判断目录是否存在
         now = time.localtime(time.time())
         if now.tm_mon < 10:
@@ -87,8 +88,9 @@ def main():
     secret_id = "*****"
     secket_key = "*****"
     region = "bj"
+    bucket_name = "blog"
     #====================设置区结束======================
-    cos = COS_Intelligent_Upload(app_id,secret_id,secket_key,region)
+    cos = COS_Intelligent_Upload(app_id,secret_id,secket_key,region,bucket_name)
 
     print("""
 *******************************************
